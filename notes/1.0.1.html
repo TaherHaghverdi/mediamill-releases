@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Mill 1.0.1</title>
+<style>
+  body { font: 15px/1.5 -apple-system, system-ui, sans-serif; color: #1d1d1f;
+         background: #fff; max-width: 40em; margin: 2em auto; padding: 0 1.25em; }
+  h1 { font-size: 1.4em; margin-bottom: 0.2em; }
+  .meta { color: #6e6e73; margin-top: 0; }
+  h2 { font-size: 1.05em; margin-top: 1.6em; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.45em 0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1d1d1f; }
+    .meta { color: #a1a1a6; }
+  }
+</style>
+</head>
+<body>
+<h1>Media Mill 1.0.1</h1>
+<p class="meta">August 9, 2026. Fixes for three problems found right after 1.0.0.</p>
+
+<h2>Fixed</h2>
+<ul>
+  <li><strong>Media Mill no longer asks to access data from other apps when
+  it starts.</strong> It was asking on every launch, and it waited for the
+  answer before the window could open. Media Mill now declares the one shared
+  folder it uses, so there is nothing to ask about.</li>
+  <li><strong>The Safari extension works.</strong> The same problem stopped
+  Media Mill from opening the connection Safari talks to, so <em>Save to
+  Media Mill</em> could never reach the app.</li>
+  <li><strong>Chrome-family browser setup is now something you turn on.</strong>
+  Media Mill used to write its connector file into every Chromium browser on
+  the Mac at startup, which is what most of those permission requests were
+  for. It now leaves browsers alone until you ask for browser capture.</li>
+</ul>
+
+<h2>Also</h2>
+<p>The download is now a normal Mac disk image: open it and drag Media Mill
+to Applications.</p>
+
+<h2>Updating</h2>
+<p>Media Mill installs this the usual way, from the update card in Activity.
+Nothing in your Library changes.</p>
+</body>
+</html>
