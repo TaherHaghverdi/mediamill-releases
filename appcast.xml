@@ -5,6 +5,20 @@
         <description>Media Mill updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.0</title>
+            <link>https://taherhaghverdi.github.io/mediamill-releases/update.html</link>
+            <sparkle:version>20261016133126</sparkle:version>
+            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <sparkle:releaseNotesLink>https://taherhaghverdi.github.io/mediamill-releases/notes/2.0.0.html</sparkle:releaseNotesLink>
+            <pubDate>Fri, 16 Oct 2026 13:38:01 +0000</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="20261016133126" />
+            <enclosure url="https://github.com/TaherHaghverdi/mediamill-releases/releases/download/v2.0.0/MediaMill.zip"
+                       type="application/octet-stream"
+                       sparkle:edSignature="6UoHNTd7GmI/BW5CwnpGecENIuESCgDqgL73FQK9Z8uUyiFeTihQ3gx/CF22z2Y5sxsGs69SMp5dWvondKjRBw=="
+                       length="19312730" />
+        </item>
+        <item>
             <title>Version 1.0.1</title>
             <link>https://github.com/TaherHaghverdi/mediamill-releases</link>
             <sparkle:version>20260809043400</sparkle:version>
