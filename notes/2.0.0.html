@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Mill 2.0</title>
+<style>
+  body { font: 15px/1.5 -apple-system, system-ui, sans-serif; color: #1d1d1f;
+         background: #fff; max-width: 40em; margin: 2em auto; padding: 0 1.25em; }
+  h1 { font-size: 1.4em; margin-bottom: 0.2em; }
+  .meta { color: #6e6e73; margin-top: 0; }
+  h2 { font-size: 1.05em; margin-top: 1.6em; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.45em 0; }
+  a { color: #0071e3; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1d1d1f; }
+    .meta { color: #a1a1a6; }
+    a { color: #2997ff; }
+  }
+</style>
+</head>
+<body>
+<h1>Media Mill 2.0</h1>
+<p class="meta">October 2026. Run any action without building a workflow,
+find items in a large Library, and the current macOS design.</p>
+
+<h2>New</h2>
+<ul>
+  <li><strong>Run one action on your items.</strong> Select items and choose
+  <strong>Run…</strong> (⌘R). Workflows and single actions share one list,
+  with search and your recent choices. An action's settings apply to that
+  run only.</li>
+  <li><strong>Run on items from an action's page.</strong> Every action page
+  has <strong>Run on items…</strong>.</li>
+  <li><strong>Find the items you want, even in a large Library.</strong>
+  Wherever you choose items, you can search titles, transcripts, and
+  outputs, filter by tag, media, or status, sort, and select every item that
+  can run in one click.</li>
+  <li><strong>The current macOS design.</strong> On macOS 26 and later, the
+  sidebar, toolbars, and controls use the current macOS look.</li>
+  <li><strong>AI actions finish faster.</strong> On our test Mac, an AI
+  action took less than half the time it took in 1.0.</li>
+  <li><strong>Mac habits.</strong> Press Space for Quick Look, drag a link
+  onto the Library to add it, and use ⌘S and ⌘R in the workflow editor. New
+  workflow creates one right away, and workflows can be deleted. An item
+  with no transcript has a one-click <strong>Transcribe</strong>.</li>
+  <li><strong>Updates download on their own.</strong> From 2.0, new
+  versions download in the background. When one is ready, select
+  <strong>Relaunch to update</strong>. Required updates work the same
+  way.</li>
+  <li><strong>Downloads keep working when websites change.</strong> When you
+  add a link, Media Mill updates its website support if it's out of date. If
+  a download still fails in a way a newer version could fix, Media Mill
+  updates and tries once more.</li>
+</ul>
+
+<h2>Changed</h2>
+<ul>
+  <li><strong>Make subtitled copy is gone.</strong> Choose
+  <strong>Run…</strong> &gt; <strong>Burn subtitles</strong> instead. To
+  burn translated subtitles, set Language to the translation you want.</li>
+  <li><strong>Burned subtitles are easier to read.</strong> They're larger
+  and bolder, they fit vertical phone videos, Persian and Arabic read right
+  to left, and Chinese, Japanese, and Korean characters display
+  correctly.</li>
+  <li><strong>Speech detection is more accurate.</strong> Short real speech
+  and song lyrics now count as speech. Phrases a transcription engine
+  invents over silence still don't. Some existing items may show a
+  different status.</li>
+  <li><strong>Live streams and upcoming premieres are declined</strong>,
+  with a message that says why.</li>
+  <li><strong>Media Mill ignores your own yt-dlp settings file.</strong>
+  Downloads use Media Mill's settings only.</li>
+</ul>
+
+<h2>Fixed</h2>
+<ul>
+  <li><strong>YouTube downloads work again.</strong> In 1.0, many YouTube
+  videos stopped partway through with an error.</li>
+  <li><strong>Export with Replace never deletes a file before the new copy
+  is saved.</strong></li>
+  <li><strong>Quitting during a run no longer restarts a run you stopped or
+  repeats a finished step.</strong></li>
+  <li><strong>Library search shows every match.</strong> It used to stop at
+  25.</li>
+  <li><strong>Assistants connected to Media Mill get accurate status</strong>
+  for links they add, while the link's workflow is still running.</li>
+  <li>More than 100 other fixes from a full review of the app.</li>
+</ul>
+
+<h2>Updating</h2>
+<p>If you have Media Mill 1.0, it asks you to update before you continue.
+Follow the steps on the <a href="https://taherhaghverdi.github.io/mediamill-releases/update.html">update page</a>.
+Your Library, workflows, actions, and settings stay as they are.</p>
+<p>Assistants connected to Media Mill keep working. If one reports a lost
+connection right after the update, try the request again.</p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update Media Mill</title>
+<style>
+  body { font: 15px/1.5 -apple-system, system-ui, sans-serif; color: #1d1d1f;
+         background: #fff; max-width: 40em; margin: 2em auto; padding: 0 1.25em; }
+  h1 { font-size: 1.4em; margin-bottom: 0.2em; }
+  .meta { color: #6e6e73; margin-top: 0; }
+  h2 { font-size: 1.05em; margin-top: 1.6em; }
+  ol, ul { padding-left: 1.2em; }
+  li { margin: 0.45em 0; }
+  .download { display: inline-block; margin: 0.4em 0; padding: 0.55em 1.1em;
+              border-radius: 8px; background: #0071e3; color: #fff;
+              text-decoration: none; font-weight: 600; }
+  a { color: #0071e3; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1d1d1f; }
+    .meta { color: #a1a1a6; }
+    a { color: #2997ff; }
+    .download { background: #0a84ff; color: #fff; }
+  }
+</style>
+</head>
+<body>
+<h1>Update Media Mill</h1>
+<p class="meta">Your copy of Media Mill needs the latest version to continue.
+Your Library, workflows, actions, and settings stay as they are.</p>
+
+<p>The download should start on its own. If it doesn't, select
+<strong>Download Media Mill</strong>.</p>
+<p><a class="download" id="download" href="https://github.com/TaherHaghverdi/mediamill-releases/releases/latest/download/MediaMill.dmg">Download Media Mill</a></p>
+
+<h2>Install the latest version</h2>
+<ol>
+  <li>Quit Media Mill. On the update screen, select <strong>Quit Media
+  Mill</strong>, or choose Media Mill &gt; Quit Media Mill.</li>
+  <li>Open the <strong>MediaMill.dmg</strong> you just downloaded. In the
+  window that opens, drag Media Mill to the Applications folder.</li>
+  <li>When your Mac asks, choose <strong>Replace</strong>.</li>
+  <li>Open Media Mill from your Applications folder.</li>
+</ol>
+<p>The update screen goes away when the new version opens.</p>
+
+<h2>If it doesn't work</h2>
+<ul>
+  <li><strong>Your Mac says Media Mill is in use.</strong> Media Mill is
+  still open. Quit it, then drag it to Applications again.</li>
+  <li><strong>The update screen comes back.</strong> An older copy opened.
+  Open the copy in your Applications folder, and move any other copies of
+  Media Mill to the Trash.</li>
+  <li><strong>Something else.</strong> <a href="https://untitledapps.dev/media-mill/support">Contact Media Mill support</a>.</li>
+</ul>
+
+<p class="meta">Media Mill needs a Mac with Apple silicon and macOS 15 or
+later.</p>
+<script>
+// Start the download once per visit, so a reload doesn't fetch it again.
+(function () {
+  try {
+    if (sessionStorage.getItem("mm-download-started")) return;
+    sessionStorage.setItem("mm-download-started", "1");
+  } catch (e) {}
+  setTimeout(function () {
+    window.location.href = document.getElementById("download").href;
+  }, 400);
+})();
+</script>
+</body>
+</html>
